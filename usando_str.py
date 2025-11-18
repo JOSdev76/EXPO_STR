@@ -1,14 +1,14 @@
 #INGRESA UN TEXTO O PALABRA
 texto = input("Ingresa un texto :")
-print("\nTexto original :" ,texto)
-print("Sin espacios al inicio/final :" ,texto.strip())
+print("\nTexto original :",texto)
+print("Sin espacios al inicio/final :",texto.strip())
 print("En mayusculas :",texto.upper())
-print("Cantidad de caracteres :" , len(texto))
+print("Cantidad de caracteres :",len(texto))
 #INGRESA UNA PALABRA A BUSCAR DENTRO DE LO QUE ESCRIBISTE
 palabra = input("Palabra a buscar :")
-pos = texto.fiend(palabra)
+pos = texto.find(palabra)
 if pos != -1:
-   print(f"La palabra "{palabra}" se encontro en la posicion {pos}")
+   print(f"La palabra {palabra} esta en la posicion {pos}")
 else:
    print("Palabra no encontrada")
 #INGRESA UNA PALABRA DENTRO DEL TEXTO QUE QUIERES REEMPLAZAR
